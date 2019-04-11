@@ -1,14 +1,13 @@
-name = "Yuki"
+name = "Shwchurch"
 license = "MIT"
-licenselink = "https://github.com/iCyris/hugo-theme-yuki/blob/master/LICENSE"
-description = "Hugo theme yuki. She is as pure as the snow."
-homepage = "https://github.com/iCyris/hugo-theme-yuki"
+description = "Hugo theme for Beijing Shouwang Church"
+homepage = "https://github.com/shwchurch3/hugo-theme-shwchurch"
 tags = ["blog", "responsive", "highlight", "clean"]
 features = ["blog", "responsive", "highlight", "clean"]
-min_version = "0.41"
+min_version = "0.1"
 
 [author]
-  name = "Cyris"
-  homepage = "https://github.com/iCyris/hugo-theme-yuki"
+  name = "Shwchurch"
+  homepage = "https://github.com/shwchurch3/hugo-theme-shwchurch"
 
 
