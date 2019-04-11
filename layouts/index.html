@@ -11,13 +11,13 @@
 </div>
 <div class="index-sns u-font">
     {{ range .Site.Menus.social }}
-    <a class="index-sns__name" target="_blank" href="{{ .URL }}">{{ .Name }}</a>
+    <a class="index-sns__name" href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
 </div>
 
 <!-- Content list -->
 <div class="index-line u-font">
-    <span class="index-line__content u-font">Home</span>
+    <span class="index-line__content u-font">首页</span>
 </div>
 <div class="index-posts">
     {{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
