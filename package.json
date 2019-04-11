@@ -1,0 +1,17 @@
+{
+  "name": "hugo-theme-shwchurch",
+  "version": "1.0.0",
+  "description": "❄️ Hugo theme yuki. She is as pure as the snow.",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "./node_modules/node-sass/bin/node-sass --watch  ./static/scss/style.scss ./static/scss/style.css --recursive --source-map true "
+
+  },
+  "author": "",
+  "license": "ISC"
+}
