@@ -1,9 +1,21 @@
-window.onscroll = function() {fixNav()};
+window.onscroll = function() {
+    fixNavThrottle();
+};
 
 let navbar = document.getElementById("nav-bar");
 let logo =  document.querySelector(".site-logo__wrap");
 
 let sticky = logo.offsetHeight;
+
+let fixNavThrottleId;
+function fixNavThrottle() {
+    clearTimeout(fixNavThrottleId);
+    fixNavThrottleId = setTimeout(function() {
+        fixNav();
+        },
+        1000
+    )
+}
 
 function fixNav() {
     if (window.pageYOffset >= sticky) {
