@@ -20,25 +20,6 @@
         {{ end }}
     </div>
 </div>
-<div class="main-profile">
-    <div class="main-profile__avatar">
-        {{ with .Site.Params.avatar }}
-            <img src="{{ . }}">
-        {{ end }}
-    </div>
-    <div class="main-profile__body">
-        <div class="main-profile__author">
-            {{ with .Site.Params.author }}
-            <span> {{ . }} </span>
-            {{ end }}
-        </div>
-        <div class="main-profile__description">
-            {{ with .Site.Params.description }}
-            <p> {{ . }} </p>
-            {{ end }}
-        </div>
-    </div>
-</div>
 <div class="main-line"></div>
 <div class="main-pn">
     {{ with .PrevInSection }}
