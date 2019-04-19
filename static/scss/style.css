@@ -679,5 +679,12 @@ h1, h2, h3, h4 {
 .wechat-unblock .main-content__date h4, .wechat-unblock .main-content__date {
         margin: 5px 0;
 }
+.wechat-unblock .main-content, .wechat-unblock .title-type__custom {
+        margin-top: 5px;
+}
+
+.wechat-unblock article {
+        margin: 10px 0;
+}
 
 /*# sourceMappingURL=style.css.map */
