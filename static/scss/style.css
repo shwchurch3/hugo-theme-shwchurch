@@ -28,7 +28,8 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
+  /* -webkit-overflow-scrolling: touch;  */
+}
 
 a {
   text-decoration: none;
