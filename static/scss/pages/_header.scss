@@ -3,7 +3,7 @@
  */
 .site-logo__wrap {
   position: relative;
-  width: 100vw;
+  width: 100%;
   padding: 7vmin 0;
   background-color: $theme-color-white;
   @media screen and (max-width: 800px) {
@@ -25,18 +25,18 @@
 .site-nav {
   position: relative;
   width: 100%;
-  padding: 2vh 0;
+  padding: 10px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   background-color: $theme-color-white;
   letter-spacing: 1px;
   z-index: 1000;
-  .site-nav__wrap { margin: 0 2vw ;}
+  .site-nav__wrap { margin: 0 10px ;}
   .site-nav__el {
     display: inline-block;
-    height: 4vh;
-    line-height: 4vh;
+    height: 25px;
+    line-height: 25px;
     color: $theme-color-black;
     font-size: .8rem;
     &:hover { opacity: .6 ; transition: opacity .2s ease ;}
@@ -50,8 +50,8 @@
 }
 .site-nav__index {
   .site-nav__el {
-    height: 5vh;
-    line-height: 5vh;
+    height: 25px;
+    line-height: 25px;
   }
 }
 .site-nav-fixed {
@@ -108,8 +108,8 @@
       text-align: center;
       margin: 12px 0;
       a {
-        height: 4vh;
-        line-height: 4vh;
+        height: 25px;
+        line-height: 25px;
         font-size: 1.5rem;
         letter-spacing: 2px;
       }
