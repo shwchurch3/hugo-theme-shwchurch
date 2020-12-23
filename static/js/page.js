@@ -4,7 +4,8 @@ var isWeixin = function () { //判断是否是微信
 };
 
 window.onscroll = function () {
-    fixNavThrottle();
+    //fixNavThrottle();
+
 };
 
 let navbar = document.getElementById("nav-bar");
