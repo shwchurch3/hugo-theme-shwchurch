@@ -7,7 +7,7 @@
     {{ end }}
     <div class="site-nav__wrap">
         
-        <form id="bing_search_form"><input name="keyword" type="text" placeholder="关键字"><button type="submit">提交</button></form>
+        <form id="bing_search_form"><input id="keyword_input" name="keyword" type="text" placeholder="关键字"><button type="submit">提交</button></form>
         <a class="site-nav__el" href="javascript:void(0)" onclick="bingSearch(this)" >搜索</a>
         <script>
             function bingSearchInit(){
@@ -28,6 +28,8 @@
                 const form = document.querySelector('#bing_search_form');
                 form.style.display = 'block';
                 trigger.style.display = 'none';
+                const input = document.querySelector('#keyword_input');
+                input.focus();
             }
             bingSearchInit();
         </script>
