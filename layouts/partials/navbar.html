@@ -5,4 +5,40 @@
         <a class="site-nav__el" href="{{ .URL }}" >{{ .Name }}</a>
     </div>
     {{ end }}
+    <div class="site-nav__wrap">
+        
+        <form id="bing_search_form"><input name="keyword" type="text" placeholder="关键字"><button type="submit">提交</button></form>
+        <a class="site-nav__el" href="javascript:void(0)" onclick="bingSearch(this)" >搜索</a>
+        <script>
+            function bingSearchInit(){
+                const form = document.querySelector('#bing_search_form');
+
+                form.addEventListener('submit', function(e) {
+                    const formData = new FormData(e.target);
+                    const keyword = formData.get('keyword');
+                    const win = window.open('https://www.bing.com/search?q=site%3ashwchurch3.github.io+' + encodeURIComponent(keyword) + '&qs=HS&sc=1-0&cvid=94EF15E528594740AFAD23760C8E98F3&FORM=QBLH&sp=1')
+                    if (!win) {
+                        alert('无法打开必应搜索。');
+                    }
+                    e.preventDefault();
+                    return false;
+                })
+            }
+            function bingSearch(trigger) {
+                const form = document.querySelector('#bing_search_form');
+                form.style.display = 'block';
+                trigger.style.display = 'none';
+            }
+            bingSearchInit();
+        </script>
+        <style>
+            #bing_search_form {
+                display: none;
+            }
+            #bing_search_form button[type="submit"] {
+                visibility: none;
+                margin-left: 5px;
+            }
+        </style>
+    </div>
 </div>
