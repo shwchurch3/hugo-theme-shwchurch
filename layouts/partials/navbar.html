@@ -23,6 +23,10 @@
                 })
             }
             function bingSearch(trigger) {
+                if (isWeixin && isWeixin()) {
+                    alert('微信不支持必应搜索，请使用浏览器打开。');
+                    return;
+                }
                 var form = document.querySelector('#bing_search_form');
                 form.style.display = 'block';
                 trigger.style.display = 'none';
