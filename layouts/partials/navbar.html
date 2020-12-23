@@ -11,24 +11,22 @@
         <a class="site-nav__el" href="javascript:void(0)" onclick="bingSearch(this)" >搜索</a>
         <script>
             function bingSearchInit(){
-                const form = document.querySelector('#bing_search_form');
+                var form = document.querySelector('#bing_search_form');
 
                 form.addEventListener('submit', function(e) {
-                    const formData = new FormData(e.target);
-                    const keyword = formData.get('keyword');
-                    const win = window.open('https://www.bing.com/search?q=site%3ashwchurch3.github.io+' + encodeURIComponent(keyword) + '&qs=HS&sc=1-0&cvid=94EF15E528594740AFAD23760C8E98F3&FORM=QBLH&sp=1')
-                    if (!win) {
-                        alert('无法打开必应搜索。');
-                    }
+                    var formData = new FormData(e.target);
+                    var keyword = formData.get('keyword');
+                    location.href = 'https://www.bing.com/search?q=site%3ashwchurch3.github.io+' + encodeURIComponent(keyword) + '&qs=HS&sc=1-0&cvid=94EF15E528594740AFAD23760C8E98F3&FORM=QBLH&sp=1';
+                    
                     e.preventDefault();
                     return false;
                 })
             }
             function bingSearch(trigger) {
-                const form = document.querySelector('#bing_search_form');
+                var form = document.querySelector('#bing_search_form');
                 form.style.display = 'block';
                 trigger.style.display = 'none';
-                const input = document.querySelector('#keyword_input');
+                var input = document.querySelector('#keyword_input');
                 input.focus();
             }
             bingSearchInit();
