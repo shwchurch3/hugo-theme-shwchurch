@@ -148,7 +148,7 @@
 .main-pn {
   @media screen and (max-width: 800px) { width: 90vw ;}
   position: relative;
-  width: 56vw; height: 13vh;
+  width: 56vw; height: 60;
   margin: 0 auto;
   .previous, .next {
     display: inline-block;
@@ -170,7 +170,7 @@
   }
   .previous {
     left: 0;
-    padding: 3vmin 2vmin 3vmin 6vmin;
+    padding: 10px 10px 10px 27px;
     @media screen and (max-width: 800px) { padding: 5vmin 3vmin 5vmin 8vmin ;}
     .pn-dec {
       &::before { content: "\25C4" ;}
@@ -179,7 +179,7 @@
   }
   .next {
     right: 0;
-    padding: 3vmin 7vmin 3vmin 5vmin;
+    padding:10px 27px 10px 10px;
     @media screen and (max-width: 800px) { padding: 5vmin 7vmin 5vmin 5vmin ;}
     .pn-dec {
       &::before{ content: "\25BA" ;}
