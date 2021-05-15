@@ -4,7 +4,7 @@
   "description": "❄️ Hugo theme yuki. She is as pure as the snow.",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {},
   "scripts": {
