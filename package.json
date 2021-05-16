@@ -4,12 +4,12 @@
   "description": "❄️ Hugo theme yuki. She is as pure as the snow.",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.11.0"
+    "node-sass": "latest"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "./node_modules/node-sass/bin/node-sass --watch  ./static/scss/style.scss ./static/scss/style.css --recursive --source-map true "
+    "sass": "npx node-sass --watch  ./static/scss/style.scss ./static/scss/style.css --recursive --source-map true "
 
   },
   "author": "",
